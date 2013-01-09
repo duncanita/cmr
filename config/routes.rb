@@ -1,5 +1,11 @@
 Cmr::Application.routes.draw do
 
+  resources :goods
+
+
+  resources :packagings
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
