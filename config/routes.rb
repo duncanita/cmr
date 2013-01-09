@@ -1,6 +1,5 @@
 Cmr::Application.routes.draw do
-
-  resources :goods
+  resources :items
 
 
   resources :packagings

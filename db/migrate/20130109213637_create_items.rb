@@ -1,6 +1,6 @@
-class CreateGoods < ActiveRecord::Migration
+class CreateItems < ActiveRecord::Migration
   def change
-    create_table :goods do |t|
+    create_table :items do |t|
       t.string :description
 
       t.timestamps
