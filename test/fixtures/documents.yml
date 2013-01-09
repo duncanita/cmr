@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number_of_package: 1.5
+  weight: 1.5
+  volume: 1.5
+  instructions: MyString
+  number: 1
+
+two:
+  number_of_package: 1.5
+  weight: 1.5
+  volume: 1.5
+  instructions: MyString
+  number: 1
