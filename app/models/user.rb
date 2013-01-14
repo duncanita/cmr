@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
  
   validates_presence_of :name, :surname, :piva
   validates_uniqueness_of :name, :email, :case_sensitive => false
+
+  has_many :document
 end

@@ -1,0 +1,29 @@
+<h1>Listing documentrows</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Number of package</th>
+    <th>Weight</th>
+    <th>Volume</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @documentrows.each do |documentrow| %>
+  <tr>
+    <td><%= documentrow.description %></td>
+    <td><%= documentrow.number_of_package %></td>
+    <td><%= documentrow.weight %></td>
+    <td><%= documentrow.volume %></td>
+    <td><%= link_to 'Show', documentrow %></td>
+    <td><%= link_to 'Edit', edit_documentrow_path(documentrow) %></td>
+    <td><%= link_to 'Destroy', documentrow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Documentrow', new_documentrow_path %>

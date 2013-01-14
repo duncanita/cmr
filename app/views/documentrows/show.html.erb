@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @documentrow.description %>
+</p>
+
+<p>
+  <b>Number of package:</b>
+  <%= @documentrow.number_of_package %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @documentrow.weight %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @documentrow.volume %>
+</p>
+
+
+<%= link_to 'Edit', edit_documentrow_path(@documentrow) %> |
+<%= link_to 'Back', documentrows_path %>

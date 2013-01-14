@@ -1,4 +1,7 @@
 Cmr::Application.routes.draw do
+  resources :documentrows
+
+
   resources :documents
 
 

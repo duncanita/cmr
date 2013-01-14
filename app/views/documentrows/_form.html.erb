@@ -1,0 +1,33 @@
+<%= form_for(@documentrow) do |f| %>
+  <% if @documentrow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@documentrow.errors.count, "error") %> prohibited this documentrow from being saved:</h2>
+
+      <ul>
+      <% @documentrow.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_package %><br />
+    <%= f.text_field :number_of_package %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br />
+    <%= f.text_field :volume %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
