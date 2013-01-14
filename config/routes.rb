@@ -1,15 +1,4 @@
 Cmr::Application.routes.draw do
-  resources :documentrows
-
-
-  resources :documents
-
-
-  resources :items
-
-
-  resources :packagings
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -62,6 +51,10 @@ Cmr::Application.routes.draw do
   # just remember to delete public/index.html.
   authenticated :user do 
     root :to => 'home#index' 
+    resources :documentrows
+    resources :documents
+    resources :items
+    resources :packagings
   end
 
   root :to => 'home#index'
